@@ -15,12 +15,15 @@ Hello Bulma and Vue!
 <script type="module">
 import { createApp, ref } from './vue.js'
 import GroceryItem from './GroceryItem.js'
+import StationeryItem from './StationeryItem.js'
 
 createApp({
   components: {
-    GroceryItem
+    GroceryItem,
+    StationeryItem
   },
   setup() {
+  
     const groceryList = ref([
       { id: 0, text: 'Vegetables' },
       { id: 1, text: 'Cheese' },
@@ -28,9 +31,17 @@ createApp({
       { id: 3, text: 'Bread' },
       { id: 4, text: 'Whatever else humans are supposed to eat' }
     ])
+    
+    const stationeryList = ref([
+      { id: 0, text: 'Pen' },
+      { id: 1, text: 'Pencil' },
+      { id: 2, text: 'Sharpener' },
+      { id: 3, text: 'Eraser' },
+      { id: 4, text: 'Whatever else humans are supposed to write with' }
+    ])
 
     return {
-      groceryList
+      groceryList, stationeryList
     }
   }
 }).mount('#app')
@@ -51,7 +62,27 @@ createApp({
       :key="item.id"
     >
     </grocery-item>
+    
   </ol>
+  
+  <br />
+  
+  <h1 class="title is-3"> Stationery Items </h1>
+  <ol>
+    <!--
+      We are providing each stationery-item with the stationery object
+      it's representing, so that its content can be dynamic.
+      We also need to provide each component with a "key",
+    -->
+    <stationery-item
+      v-for="item in stationeryList"
+      :stationery="item"
+      :key="item.id"
+    >
+    </stationery-item>
+    
+  </ol>
+  
 </div>
 
 </body>
