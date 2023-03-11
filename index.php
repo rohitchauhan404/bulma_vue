@@ -42,17 +42,9 @@ createApp({
       { id: 3, text: 'Eraser' },
       { id: 4, text: 'Whatever else humans are supposed to write with' }
     ])
-    
-    const reviewsList = ref([
-      { id: 0, text: 'Review 1' },
-      { id: 1, text: 'Review 2' },
-      { id: 2, text: 'Review 3' },
-      { id: 3, text: 'Review 4' },
-      { id: 4, text: 'Review 5' }
-    ])
 
     return {
-      groceryList, stationeryList, reviewsList
+      groceryList, stationeryList
     }
   }
 }).mount('#app')
@@ -95,8 +87,8 @@ createApp({
   </ol>
   
   <br />
-  
-  <review-items :reviews="reviewsList"></review-items>
+  <!-- Import a complete Reviews Component from other file -->
+  <review-items></review-items>
   
 </div>
 
