@@ -16,12 +16,15 @@ Hello Bulma and Vue!
 import { createApp, ref } from './vue.js'
 import GroceryItem from './GroceryItem.js'
 import StationeryItem from './StationeryItem.js'
+import ReviewItems from './ReviewItems.js';
 
 createApp({
   components: {
     GroceryItem,
-    StationeryItem
+    StationeryItem,
+    ReviewItems
   },
+  
   setup() {
   
     const groceryList = ref([
@@ -31,7 +34,7 @@ createApp({
       { id: 3, text: 'Bread' },
       { id: 4, text: 'Whatever else humans are supposed to eat' }
     ])
-    
+      
     const stationeryList = ref([
       { id: 0, text: 'Pen' },
       { id: 1, text: 'Pencil' },
@@ -39,9 +42,17 @@ createApp({
       { id: 3, text: 'Eraser' },
       { id: 4, text: 'Whatever else humans are supposed to write with' }
     ])
+    
+    const reviewsList = ref([
+      { id: 0, text: 'Review 1' },
+      { id: 1, text: 'Review 2' },
+      { id: 2, text: 'Review 3' },
+      { id: 3, text: 'Review 4' },
+      { id: 4, text: 'Review 5' }
+    ])
 
     return {
-      groceryList, stationeryList
+      groceryList, stationeryList, reviewsList
     }
   }
 }).mount('#app')
@@ -82,6 +93,10 @@ createApp({
     </stationery-item>
     
   </ol>
+  
+  <br />
+  
+  <review-items :reviews="reviewsList"></review-items>
   
 </div>
 
