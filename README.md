@@ -8,3 +8,7 @@ In https://vuejs.org/examples/ select 'Compostion API' and 'HTML' to run the cod
 
 In your code use the statement,
 import { createApp, ref } from './vue.js'
+
+If your Component is named GroceryItem in GroceryItem.js then it should be named grocery-item in the HTML DOM template.
+
+For you data-array, don't use _ or - like grocery_items or grocery-items, but use groceryList because JavaScript confuses them with an expression.
