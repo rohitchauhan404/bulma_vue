@@ -7,5 +7,4 @@ The ESM production version of vue.js is included.
 In https://vuejs.org/examples/ select 'Compostion API' and 'HTML' to run the code.
 
 In your code use the statement,
-
 import { createApp, ref } from './vue.js'
