@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma and Vue!</title>
-    <link rel="stylesheet" href="./bulma.dev.css">  
+    <link rel="stylesheet" href="./css/bulma.dev.css">  
   </head>
   <body>
   
