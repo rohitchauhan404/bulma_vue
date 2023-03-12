@@ -13,6 +13,7 @@ If your Component is named GroceryItem in GroceryItem.js then it should be named
 
 For you data-array, don't use _ or - like grocery_items or grocery-items, but use groceryList because JavaScript confuses them with an expression.
 
+
 BEFORE HOSTING YOUR APP
 ****************************************
 In index.php, change bulma.dev.css to bulma.css
