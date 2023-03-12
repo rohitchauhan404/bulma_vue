@@ -16,7 +16,7 @@ Hello Bulma and Vue!
 import { createApp, ref } from './vue.dev.js'
 import GroceryItem from './components/GroceryItem.js'
 import StationeryItem from './components/StationeryItem.js'
-import ReviewItems from './ReviewItems.js';
+import ReviewItems from './components/ReviewItems.js';
 
 createApp({
   components: {
