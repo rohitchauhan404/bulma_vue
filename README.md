@@ -7,20 +7,18 @@ The ESM production version vue.js and minified bulma.css are included.
 In https://vuejs.org/examples/ select 'Composition API' and 'HTML' to run the code.
 
 In your code use the statement,
-import { createApp, ref } from './vue.js'
+import { createApp, ref } from './vue.js' or whatever the relative path for vue.js is.
 
 If your Component is named GroceryItem in GroceryItem.js then it should be named grocery-item in the HTML DOM template.
 
 For you data-array, don't use _ or - like grocery_items or grocery-items, but use groceryList because JavaScript confuses them with an expression.
 
-BEFORE HOSTING YOUR APP
+FOR DEVELOPMENT AND PRODUCTION USE VITE
 ****************************************
-In index.php, change bulma.dev.css to bulma.css
-    <link rel="stylesheet" href="./bulma.dev.css">  
-    
-In index.php, change vue.dev.js to vue.js
-    import { createApp, ref } from './vue.dev.js'
-    
-To change vue.dev.js to vue.js in all of your components, go inside your project folder, and run,    
-    sed -i '1!b;s/vue.dev.js/vue.js/' components/*
+Install Vite with npm install
 
+To run Vite development-server with Hot Module Replacement
+npm run dev
+
+To build your project into dist/ folder
+npm run build
