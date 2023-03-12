@@ -12,3 +12,9 @@ import { createApp, ref } from './vue.js'
 If your Component is named GroceryItem in GroceryItem.js then it should be named grocery-item in the HTML DOM template.
 
 For you data-array, don't use _ or - like grocery_items or grocery-items, but use groceryList because JavaScript confuses them with an expression.
+
+While moving your app to PHP hosting, in index.php, change bulma.dev.css to bulma.css
+    <link rel="stylesheet" href="./bulma.dev.css">  
+    
+Also change vue.dev.js to vue.js
+    import { createApp, ref } from './vue.dev.js'

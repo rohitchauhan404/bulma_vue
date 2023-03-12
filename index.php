@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma and Vue!</title>
-    <link rel="stylesheet" href="./bulma.css">  
+    <link rel="stylesheet" href="./bulma.dev.css">  
   </head>
   <body>
   
@@ -13,9 +13,9 @@ Hello Bulma and Vue!
 -->
 
 <script type="module">
-import { createApp, ref } from './vue.js'
-import GroceryItem from './GroceryItem.js'
-import StationeryItem from './StationeryItem.js'
+import { createApp, ref } from './vue.dev.js'
+import GroceryItem from './components/GroceryItem.js'
+import StationeryItem from './components/StationeryItem.js'
 import ReviewItems from './ReviewItems.js';
 
 createApp({
