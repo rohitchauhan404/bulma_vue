@@ -1,4 +1,4 @@
-import { ref } from './../vue.dev.js'
+import { ref } from './../js/vue.js'
 
 export default {
 
