@@ -2,7 +2,9 @@ PHP_BULMA_VUE
 ****************************************
 PHP, Bulma, Vue setup to serve your Vue application directly through a PHP enabled Apache Web Server without any build and bundle process.
 
-The ESM production version vue.js and minified bulma.css are included.
+Put the folder in your Apache Web root and open http://localhost/php_bulma_vue
+
+The ESM development version vue.js and and unminified bulma.css are included.
 
 In https://vuejs.org/examples/ select 'Composition API' and 'HTML' to run the code.
 
@@ -17,7 +19,7 @@ FOR DEVELOPMENT AND PRODUCTION USE VITE
 ****************************************
 Install Vite with npm install
 
-To run Vite development-server with Hot Module Replacement
+To run Vite development-server with Hot Module Replacement, this will update the browser on each code change.
 npm run dev
 
 To build your project into dist/ folder
