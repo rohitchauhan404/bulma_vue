@@ -1,8 +1,8 @@
-PHP_BULMA_VUE
+PHP_VUE
 ****************************************
-PHP, Bulma, Vue boilerplate to serve your Vue application directly through a PHP enabled Apache Web Server without any build and bundle process.
+PHP and Vue boilerplate to serve your Vue application directly through a PHP enabled Apache Web Server without any build and bundle process.
 
-Put the folder in your Apache Web root and open http://localhost/php_bulma_vue
+Put the folder in your Apache Web root and open http://localhost/php_vue
 
 The ESM development version "vue.js" and and unminified "bulma.css" are included. On production you must replace them with their minified counterparts. 
 
